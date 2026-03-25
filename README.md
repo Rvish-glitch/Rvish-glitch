@@ -9,7 +9,7 @@ I'm a Python backend developer, and I spend most of my time building systems whe
 
 ## Projects
 
-**[RateShield – Rate Limiter & Gateway](https://github.com/Rvish-glitch/rateshield)** — Production-grade distributed API gateway with route-aware sliding window rate limiting via Redis Sorted Sets, JWT authentication, and RBAC across 3 client tiers. Orchestrates 3 containerized services via Docker Compose, deployed on AWS EC2.
+**[RateShield – Rate Limiter & Gateway](https://github.com/Rvish-glitch/api-rate-limiter)** — Production-grade distributed API gateway with route-aware sliding window rate limiting via Redis Sorted Sets, JWT authentication, and RBAC across 3 client tiers. Orchestrates 3 containerized services via Docker Compose, deployed on AWS EC2.
 
 **[NutriPy – Nutrition Tracking Platform](https://github.com/Rvish-glitch/nutripy)** — Full-stack nutrition tracker with real-time barcode ingestion, token-indexed Indian food search, and async macro computation across 12 nutritional parameters. In-memory SQLite inverted index for zero-latency lookups across 1000+ food records. Built with FastAPI and React.js, assets on AWS S3.
 
