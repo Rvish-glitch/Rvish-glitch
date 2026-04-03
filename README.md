@@ -8,12 +8,11 @@ I'm a Python backend developer, and I spend most of my time building systems whe
 - Competitive programming and algorithmic problem solving
 
 ## Projects
-
 **[RateShield – Rate Limiter & Gateway](https://github.com/Rvish-glitch/api-rate-limiter)** — Production-grade distributed API gateway with route-aware sliding window rate limiting via Redis Sorted Sets, JWT authentication, and RBAC across 3 client tiers. Orchestrates 3 containerized services via Docker Compose, deployed on AWS EC2.
 
-**[NutriPy – Nutrition Tracking Platform](https://github.com/Rvish-glitch/nutripy)** — Full-stack nutrition tracker with real-time barcode ingestion, token-indexed Indian food search, and async macro computation across 12 nutritional parameters. In-memory SQLite inverted index for zero-latency lookups across 1000+ food records. Built with FastAPI and React.js, assets on AWS S3.
+**[StreamDocs – Async Document Processing Workflow](https://github.com/Rvish-glitch/streamdocs)** — Asynchronous multi-document upload and processing pipeline built with FastAPI + Celery + PostgreSQL. Live progress tracking via Redis Pub/Sub and WebSocket bridge, surfacing Queued/Processing/Completed/Failed states in real time. Full-stack React + TypeScript UI with search/filter/sort, JSON editing, and JSON/CSV export.
 
-**[AgroEnferma – Plant Health Diagnostics](https://github.com/Rvish-glitch/leaf-disease)** — Fine-tuned EfficientNetB3 achieving 99.59% accuracy across 38 disease classes and 15+ crop types on 70k+ images. Flask REST API under Gunicorn at sub-2s inference latency, deployed on Railway + Vercel with GitHub Actions CI/CD.
+**[NutriPy – Nutrition Tracking Platform](https://github.com/Rvish-glitch/nutripy)** — Full-stack nutrition tracker with real-time barcode ingestion, token-indexed Indian food search, and async macro computation across 12 nutritional parameters. In-memory SQLite inverted index for zero-latency lookups across 1000+ food records. Built with FastAPI and React.js, assets on AWS S3.
 
 ## Tech I use
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -26,6 +25,10 @@ I'm a Python backend developer, and I spend most of my time building systems whe
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Celery](https://img.shields.io/badge/Celery-37814A?style=for-the-badge&logo=celery&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
 
 Python is my primary language. I work with Django ORM, SQLAlchemy, async FastAPI, JWT auth, and PostgreSQL query optimization. Docker for containerization, GitHub Actions for CI/CD, and Gunicorn for production serving.
 
