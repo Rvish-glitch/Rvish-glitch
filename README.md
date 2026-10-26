@@ -20,12 +20,17 @@
 Active merged contributor to foundational numerical computing libraries:
 
 - **[numpy / numpy](https://github.com/numpy/numpy)**
+  - **[PR #33117](https://github.com/numpy/numpy/pull/33117)** `merged`: **BUG: warm finfo cache with float64 on 2.5.x (gh-32947)**
+    - Targeted maintenance fix merged into `numpy:maintenance/2.5.x` by NumPy release manager `@charris`.
+    - Pre-warmed `_finfo_cache` with `numeric.float64` at import time in `numpy._core.getlimits` to prevent `finfo(longdouble)` from aliasing and overwriting `float64` on platforms where `sizeof(longdouble) == sizeof(double)` (MSVC Windows & macOS ARM64).
+    - Authored isolated subprocess regression test suite ensuring downstream stability across scientific dependencies (`statsmodels`, `NiMARE`).
   - **[PR #33049](https://github.com/numpy/numpy/pull/33049)** `merged`: **BUG: include dtype class in finfo cache key to avoid aliasing (gh-32947)**
     - Fixed a floating-point cache aliasing issue in `numpy/_core` on platforms where `sizeof(longdouble) == sizeof(double)` (MSVC Windows & macOS ARM64).
     - Isolated cache keys by `(dtype, type(dtype))` and implemented regression tests in `test_getlimits.py` to prevent silent float promotion and downstream solver errors (`statsmodels`, `NiMARE`).
   - **[PR #32575](https://github.com/numpy/numpy/pull/32575)** `merged`: **DOC, TYPING: np.nan_to_num copy semantics and overloads (gh-29045)**
     - Standardized `np.nan_to_num` copy semantics and `ValueError` exception boundaries for NumPy 2.0+.
     - Updated static typing definitions and function overloads in `numpy/lib/_type_check_impl.pyi` to enforce runtime API consistency with type checkers.
+
 
 ---
 
